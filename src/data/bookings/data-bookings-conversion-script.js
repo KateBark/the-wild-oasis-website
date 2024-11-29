@@ -312,7 +312,7 @@ const opts = { fields };
 try {
   const csv = parse(bookings, opts);
   fs.writeFileSync("output.csv", csv);
-  console.log("CSV file successfully created.");
+  // console.log("CSV file successfully created.");
 } catch (err) {
   console.error(err);
 }
